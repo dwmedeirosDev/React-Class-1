@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// Componente de Class
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Primeiro, Importa o componente
+import React, { Component } from "react";
+
+// Segundo, Cria um componente
+class App extends Component{
+    render(){
+        return(
+            <h1>Olá Mundo</h1>
+        )
+    }
 }
 
-export default App;
+// Terceiro, Exporta o componente
+export default App
+
+// ########################################################################
+
+// // Componente de função
+
+// // Importando
+// import React from "react";
+
+// // Criando uma função
+// function App(){
+//     return(
+//         <h1>Olá Mundo</h1>
+//     )
+// }
+
+// // Exportando a função para utilizar em outros locais
+// export default App;
